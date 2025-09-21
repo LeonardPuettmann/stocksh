@@ -29,23 +29,23 @@ sudo apt install jq  # Debian/Ubuntu
 ### Basic Commands
 | Command                          | Description                                      |
 |----------------------------------|--------------------------------------------------|
-| `bash stocks.sh`                 | Show prices for all saved tickers.               |
-| `bash stocks.sh -a AAPL MSFT`    | Add one or more tickers.                         |
-| `bash stocks.sh -r AAPL MSFT`    | Remove one or more tickers.                      |
-| `bash stocks.sh -m AAPL`         | Manually query a ticker (does not save it).      |
-| `bash stocks.sh -l`              | List all saved tickers.                          |
-| `bash stocks.sh -h`              | Show help.                                       |
+| `bash stocks`                 | Show prices for all saved tickers.               |
+| `bash stocks -a AAPL MSFT`    | Add one or more tickers.                         |
+| `bash stocks -r AAPL MSFT`    | Remove one or more tickers.                      |
+| `bash stocks -m AAPL`         | Manually query a ticker (does not save it).      |
+| `bash stocks -l`              | List all saved tickers.                          |
+| `bash stocks -h`              | Show help.                                       |
 
 ### Examples
 ```bash
 # Add and remove tickers in one command
-bash stocks.sh -r AAPL MSFT -a IBM ING UBK.DE
+bash stocks -r AAPL MSFT -a IBM ING UBK.DE
 
 # Show prices for all saved tickers
-bash stocks.sh
+bash stocks
 
 # Manually query a ticker
-bash stocks.sh -m TSLA
+bash stocks -m TSLA
 ```
 
 ---
